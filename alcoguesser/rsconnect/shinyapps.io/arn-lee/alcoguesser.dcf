@@ -1,0 +1,12 @@
+name: alcoguesser
+title: alcoguesser
+username: arn-lee
+account: arn-lee
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17775399
+bundleId: 12473783
+url: https://arn-lee.shinyapps.io/alcoguesser/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
