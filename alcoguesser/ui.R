@@ -4,8 +4,8 @@ fluidPage(
   
   # Intro text at the top of the page
   
-  h2("Alcoguesser prototype"),
-  h3("v0.1"),
+  h2("Alcoguesser prototype (experimental branch)"),
+  h3("v0.2"),
   p("This application is designed to allow you to input your specific gravity (SG) readings over time to predict when the batch is ready for distillation or bottling."),
   p("The model assumes first-order kinetics for change in SG over time and uses a simulation of 1000 experiments to obtain uncertainty estimates"),
   
@@ -37,6 +37,9 @@ fluidPage(
   p("WARNING: here be dragons. Changing these default values is not recommended! Best-fit parameters will be found during model fitting."),
   numericInput("init_fg", label = "Estimated final SG", value = 0.95, step = 0.001),
   numericInput("init_a", label = "Estimated offset", value = 0.15, step = 0.001),
-  numericInput("init_k", label = "Estimated rate constant", value = 0.04, step = 0.001)
+  numericInput("init_k", label = "Estimated rate constant", value = 0.04, step = 0.001),
+  
+  h3("Changelog"),
+  p("v0.2: Tightened lower and upper search constraints for the nls fitting algo")
 
 )

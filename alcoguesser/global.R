@@ -5,6 +5,10 @@ library(shiny)
 library(shinyjs)
 library(rhandsontable)
 library(MASS)
+library(renv)
+
+# Preparing environment
+renv::restore()
 
 # Define global vars
 # NOTE: specifying non-int numbers for time (otherwise it gets stuck on int)

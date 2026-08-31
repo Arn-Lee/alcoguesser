@@ -51,8 +51,8 @@ function(input, output, session) {
           k = input$init_k),
         control = nls.control(maxiter = 250, warnOnly = TRUE), # warnOnly should be useful to at least attempt a fit, extra iterations to improve chances of finding a fit
         algorithm = "port",
-        lower = c(fg = 0.8, A = 0, k = 0), # fg shouldn't be below 0.8, others should be positive
-        upper = c(fg = 1.1, A = 0.5, k = 10) # should prevent exploration of exceptionally high vals, but leaving k effectively unconstrained
+        lower = c(fg = 0.95, A = 0, k = 0), # fg shouldn't be below 0.95, others should be positive
+        upper = c(fg = 1.1, A = 0.3, k = 10) # should prevent exploration of exceptionally high vals, but leaving k effectively unconstrained
         )
   })
   
